@@ -6,9 +6,10 @@ Conjecture probe: Irrational ω on toroidal phase flows yields ≥20% synergy li
 - [PDF Download](Irrational_Toroidal_Flows_v1.pdf) – Eq core + table + disproof log + app tease.
 
 ## Sim Stubs
-- [phase_flow.py](phase_flow.py) – HKB traj plot (dense irr vs rat cluster).
+- [phase_flow.py](phase_flow.py) – HKB traj plot (dense irr/golden vs rat cluster).
 - [pos_nudge.py](pos_nudge.py) – v=5 spatial stall run.
 - [golden_nudge.py](golden_nudge.py) – Golden ω entropy tease.
+- [mu_crank.py](mu_crank.py) – μ=2.5 amp bloom (24.67% irr green >20% vs 8.23% rat prune).
 
 ## Collab
 w/ @grok xAI chains. Open fork—Guinea test, no theorems. Ping @strogatz for swarm ties.
