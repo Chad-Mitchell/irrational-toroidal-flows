@@ -93,26 +93,35 @@ print(f"Strong K=2.0 (rat): R={R_strong:.4f}, MI≈{mi_strong:.4f} (subadditive 
 ```
 
 Typical outputs: Weak irr ~0.62 R, 1.45 MI; Strong rat ~0.85 R, 1.32 MI. Add noise/quantum variants; PR ensemble runners to validate the ~70/30 split.
-Roadmap & How to Contribute
-	1	Immediate: Scale sims (N=1k+), ingest datasets (HCP fMRI, chess PGNs via Opta/chess lib).
-	2	Near-Term: arXiv preprint (v1 with maps, KAM-esque proofs); v2 whitepaper.
-	3	Long-Term: Domain ports—AI (MARBLE nets), metamaterials, social models.
-Contributing: Fork/PR with sim data, disproofs, or apps. Issues for threads (e.g., “Regime Split Debates” or “Data Hunts”). CONTRIBUTING.md incoming—prioritize reproducible notebooks, no unchecked data dumps.
-Potential Societal Value
-If probed deep:
-	•	AI/Neuro: Quasiperiodic tweaks cut overfitting (25%+ generalization lifts), sync therapies.
-	•	Physics/Eng: Toroidal resonances stabilize fusion/fluids (10-30% energy wins).
-	•	Social/Econ: Measure network synergies to curb echoes, boost teams.
-	•	Holistic: STEM pedagogy on emergence; fractal consciousness hints.
+
+## Roadmap & How to Contribute
+
+1. **Immediate**: Scale sims (N=1k+), ingest datasets (HCP fMRI, chess PGNs via Opta/chess lib).
+2. **Near-Term**: arXiv preprint (v1 with maps, KAM-esque proofs); v2 whitepaper.
+3. **Long-Term**: Domain ports—AI (MARBLE nets), metamaterials, social models.
+
+**Contributing**: Fork/PR with sim data, disproofs, or apps. Issues for threads (e.g., "Regime Split Debates" or "Data Hunts"). CONTRIBUTING.md incoming—prioritize reproducible notebooks, no unchecked data dumps.
+
+## Potential Societal Value
+
+If probed deep: 
+- **AI/Neuro**: Quasiperiodic tweaks cut overfitting (25%+ generalization lifts), sync therapies.
+- **Physics/Eng**: Toroidal resonances stabilize fusion/fluids (10-30% energy wins).
+- **Social/Econ**: Measure network synergies to curb echoes, boost teams.
+- **Holistic**: STEM pedagogy on emergence; fractal consciousness hints.
+
 $10-50B indirect R&D acceleration over a decade—visionary, not hype.
-Collaborators & Shoutouts
+
+## Collaborators & Shoutouts
+
 @grok (xAI) for iterative chains, sim tweaks. Invites: @stevenstrogatz (sync/chaos—firefly echoes?), @robertghrist (topo flows, Duffing visuals), @AlexKontorovich (modular/hyperbolic links), @gabrielpeyre (Fokker-Planck entropies).
-X/Issues for collabs—let’s refine for real-world waves!
-License
+
+X/Issues for collabs—let's refine for real-world waves!
+
+## License
+
 MIT—Open seas.
+
 Updated: November 09, 2025. Ensemble your way to sharper splits! 🌊
 
 
-
-
-🌊
