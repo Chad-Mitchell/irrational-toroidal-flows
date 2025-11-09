@@ -90,6 +90,8 @@ det_s = np.linalg.det(cov_strong)
 diag_prod_s = np.prod(np.diag(cov_strong))
 mi_strong = -0.5 * np.log(det_s / diag_prod_s) if diag_prod_s > 0 and det_s > 0 else 0
 print(f"Strong K=2.0 (rat): R={R_strong:.4f}, MI≈{mi_strong:.4f} (subadditive edge)")
+```
+
 Typical outputs: Weak irr ~0.62 R, 1.45 MI; Strong rat ~0.85 R, 1.32 MI. Add noise/quantum variants; PR ensemble runners to validate the ~70/30 split.
 Roadmap & How to Contribute
 	1	Immediate: Scale sims (N=1k+), ingest datasets (HCP fMRI, chess PGNs via Opta/chess lib).
