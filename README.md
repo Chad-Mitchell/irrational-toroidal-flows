@@ -24,6 +24,9 @@ Key concepts visualized:
 - Higher-dimensional irrational paths (e.g., in neural phase spaces):  
   ![Higher dimensional irrational paths in neural phase spaces](https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2Fs41593-025-02031-z/MediaObjects/41593_2025_2031_Figa_HTML.png)
 
+- Holoflux of information on a torus topology—spiral trajectories illustrating integration, entanglement, and entropic generation, evoking a universe-scale ergodic flow:  
+  ![Holoflux on Torus Topology](https://i0.wp.com/bsahely.com/wp-content/uploads/2018/12/3-1650921x4.png?quality=80&ssl=1)
+
 ## Key Insights & Extensions
 
 ### Core Conjecture
