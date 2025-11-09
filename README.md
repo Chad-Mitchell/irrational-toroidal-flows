@@ -16,7 +16,7 @@ Inspired by ergodic theory (irrational rotations on tori), Kuramoto-style sync, 
 
 Key concepts visualized:
 - Ergodic trajectories on a 2D torus (dense irrational winding):  
-  ![Ergodic trajectory on 2D torus](https://www.researchgate.net/publication/325502059/figure/fig2/AS:632757831086080@1527872631038/Torus-breakdown-unfolding-including-the-resonance-zone-that-originates-from-the-torus.png)
+  ![Ergodic trajectory on 2D torus](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-91032-7_2/MediaObjects/506942_1_En_2_Fig5_HTML.png)
 
 - Poincaré section for dynamical flows (highlighting mixing vs. locking):  
   ![Poincaré map for dynamical systems](https://www.researchgate.net/publication/285673953/figure/fig4/AS:986142925148161@1612126203126/Time-series-shaft-orbit-frequency-spectra-and-Poincare-map-at-o-10-0-0-rad-s.jpg)
