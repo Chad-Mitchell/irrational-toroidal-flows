@@ -16,13 +16,13 @@ Inspired by ergodic theory (irrational rotations on tori), Kuramoto-style sync, 
 
 Key concepts visualized:
 - Ergodic trajectories on a 2D torus (dense irrational winding):  
-  ![Ergodic trajectory on 2D torus](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-91032-7_2/MediaObjects/506942_1_En_2_Fig5_HTML.png)
+  ![Ergodic trajectories on a 2D torus](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40295-021-00284-x/MediaObjects/40295_2021_284_Fig4_HTML.png)
 
 - Poincaré section for dynamical flows (highlighting mixing vs. locking):  
-  ![Poincaré map for dynamical systems](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40295-021-00284-x/MediaObjects/)
+  ![Poincaré section for dynamical flows](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-022-31589-6/MediaObjects/41467_2022_31589_Fig1_HTML.png)
 
 - Higher-dimensional irrational paths (e.g., in neural phase spaces):  
-  ![Higher dimensional irrational paths in neural phase spaces](https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2Fs41593-025-02031-z/MediaObjects/41593_2025_2031_Figa_HTML.png)
+  ![Higher-dimensional irrational paths](https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2Fs41593-025-02031-z/MediaObjects/41593_2025_2031_Figa_HTML.png)
 
 - Holoflux of information on a torus topology—spiral trajectories illustrating integration, entanglement, and entropic generation, evoking a universe-scale ergodic flow:  
   ![Holoflux on Torus Topology](https://i0.wp.com/bsahely.com/wp-content/uploads/2018/12/3-1650921x4.png?quality=80&ssl=1)
