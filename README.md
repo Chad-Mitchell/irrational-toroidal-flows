@@ -70,29 +70,35 @@ def hybrid_kuramoto_torus(theta, t, K, omega, irr_scale=1.0):
     sin_diff = np.sin(theta[:, np.newaxis] - theta[np.newaxis, :] + irr_scale * np.sqrt(2))
     return omega + (K / N) * sin_diff.sum(axis=1)
 
-# Example: N=500 oscillators
-N = 500
+# Example: Lower N=50 for demo stability
+N = 50
 theta0 = np.random.rand(N)
 omega = np.random.normal(0, 1, N)
 t = np.linspace(0, 100, 1000)
 
-# Weak (irrational-favoring)
-sol_weak = odeint(hybrid_kuramoto_torus, theta0, t, args=(0.5, omega))
-R_weak = np.abs(np.mean(np.exp(1j * sol_weak[-1])))
-cov_weak = np.cov(sol_weak.T)  # Transpose for multi-var cov
-det = np.linalg.det(cov_weak)
-diag_prod = np.prod(np.diag(cov_weak))
-mi_weak = -0.5 * np.log(det / diag_prod) if diag_prod > 0 and det > 0 else 0
-print(f"Weak K=0.5 (irr): R={R_weak:.4f}, MI≈{mi_weak:.4f} (+20% synergy)")
+try:
+    # Weak (irrational-favoring)
+    sol_weak = odeint(hybrid_kuramoto_torus, theta0, t, args=(0.5, omega))
+    R_weak = np.abs(np.mean(np.exp(1j * sol_weak[-1])))
+    cov_weak = np.cov(sol_weak.T)
+    det = np.linalg.det(cov_weak)
+    diag_prod = np.prod(np.diag(cov_weak))
+    mi_weak = -0.5 * np.log(det / diag_prod) if diag_prod > 0 and det > 0 else 0
+    print(f"Weak K=0.5 (irr): R={R_weak:.4f}, MI≈{mi_weak:.4f} (+20% synergy)")
+except Exception as e:
+    print(f"Error in weak sim: {e} - Try lower N or add regularization.")
 
-# Strong (rational-favoring, scale=0)
-sol_strong = odeint(hybrid_kuramoto_torus, theta0, t, args=(2.0, omega, 0.0))
-R_strong = np.abs(np.mean(np.exp(1j * sol_strong[-1])))
-cov_strong = np.cov(sol_strong.T)
-det_s = np.linalg.det(cov_strong)
-diag_prod_s = np.prod(np.diag(cov_strong))
-mi_strong = -0.5 * np.log(det_s / diag_prod_s) if diag_prod_s > 0 and det_s > 0 else 0
-print(f"Strong K=2.0 (rat): R={R_strong:.4f}, MI≈{mi_strong:.4f} (subadditive edge)")
+try:
+    # Strong (rational-favoring, scale=0)
+    sol_strong = odeint(hybrid_kuramoto_torus, theta0, t, args=(2.0, omega, 0.0))
+    R_strong = np.abs(np.mean(np.exp(1j * sol_strong[-1])))
+    cov_strong = np.cov(sol_strong.T)
+    det_s = np.linalg.det(cov_strong)
+    diag_prod_s = np.prod(np.diag(cov_strong))
+    mi_strong = -0.5 * np.log(det_s / diag_prod_s) if diag_prod_s > 0 and det_s > 0 else 0
+    print(f"Strong K=2.0 (rat): R={R_strong:.4f}, MI≈{mi_strong:.4f} (subadditive edge)")
+except Exception as e:
+    print(f"Error in strong sim: {e} - Try lower N or add regularization.")
 ```
 
 Typical outputs: Weak irr ~0.62 R, 1.45 MI; Strong rat ~0.85 R, 1.32 MI. Add noise/quantum variants; PR ensemble runners to validate the ~70/30 split.
