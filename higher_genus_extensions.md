@@ -63,7 +63,7 @@ Extend /sims/ with sympy for arithmetic α and higher-genus proxies (e.g., hyper
 
 ### Example: Diffeological Arithmetic Probe
 
-'''python
+'''
 import sympy as sp
 import numpy as np
 
