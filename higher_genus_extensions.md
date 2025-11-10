@@ -63,7 +63,7 @@ Extend /sims/ with sympy for arithmetic α and higher-genus proxies (e.g., hyper
 
 ### Example: Diffeological Arithmetic Probe
 
-'''
+```python
 import sympy as sp
 import numpy as np
 
@@ -83,7 +83,7 @@ print(f"Ergodic density for α={alpha_probe}: {ergodic_density:.4f} (target low 
 
 # Hybrid integration: Add to kuramoto for MI lift
 # ... (extend main stub)
-'''
+```
 
 Typical: Low density flags +25% synergy in high-dim; PR for nilflow ports.
 
