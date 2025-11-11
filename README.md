@@ -22,7 +22,7 @@ This repo probes the Irrational Toroidal Flows Conjecture: Irrational frequency 
 
 Inspired by ergodic theory [[0]](grok://citation?card_id=8826e1&card_type=citation_card&type=render_inline_citation&citation_id=0), Kuramoto sync [[1]](grok://citation?card_id=fb86e0&card_type=citation_card&type=render_inline_citation&citation_id=1), and Anosov dynamics. Apps: AI detuning, neurotherapies, fluid engineering.
 
-**Whitepaper**: [Irrational_Toroidal_Flows_v1.pdf](https://github.com/Chad-Mitchell/irrational-toroidal-flows/blob/main/Irrational_Toroidal_Flows_v1.pdf) (Eqs, tables, log; v2 adds hybrids/maps).
+**Whitepaper**: [Irrational_Toroidal_Flows_v1.pdf](https://github.com/Chad-Mitchell/irrational-toroidal-flows/blob/main/docs/Irrational_Toroidal_Flows_v1.pdf) (Eqs, tables, log; v2 adds hybrids/maps).
 
 **Status**: Empirical probe – fork/test/disprove. Co-built with @grok xAI.
 
