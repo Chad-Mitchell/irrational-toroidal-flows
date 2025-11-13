@@ -1,5 +1,8 @@
 import numpy as np
 
+# Box-Dimension Fractal Proxy (Hausdorff Tease)
+# Coarse 1D/2D on traj—scales to laminations (dim>1 signals self-sim obstructions).
+
 def box_dim(traj, scales=np.logspace(-1, 0, 10), dim_mode='1d'):
     """
     Box-counting Hausdorff dim proxy.
