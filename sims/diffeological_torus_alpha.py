@@ -1,6 +1,9 @@
 import sympy as sp
 import numpy as np
 
+# Diffeological Torus Alpha Probe (Arithmetic Ergodic Density)
+# From the markdown—sympy for α homotopy; low density flags dense mixing (+25% synergy).
+
 def diffeological_torus_alpha(alpha_sym, n=100):
     """
     Ergodic density metric for arithmetic α (e.g., √2+1) on T_α.
