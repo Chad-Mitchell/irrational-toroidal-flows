@@ -8,6 +8,15 @@ This outline is structured for a ~15-20 page arXiv submission (e.g., dynamical-s
 - **Abstract** (150-200 words): Summarize conjecture (irrational windings on T^n stabilize chaos for ~20% MI lifts in weak K<1.2), hybrid toggle, genus extensions (Katok disproof as resilience amp). Key results: +13.6% ±24.9% filtered lifts (80% wins), LE taming, fractal dim ~1.35. Fals: >20% rational prune. Apps: +48% neural stalls, 100% fluid flux. Keywords: Kuramoto model, ergodic theory, mutual information, topological dynamics.
 - **arXiv-style metadata**: Date: November 2025; Comments: v2 w/ genus probes.
 
+### Draft Abstract (~180 words)
+In coupled oscillator networks on toroidal manifolds, irrational frequency ratios (e.g., ω ≈ √2) generate dense, ergodic orbits that stabilize chaotic dynamics, conjectured to yield ≥20% superadditive mutual information (MI) gains and 15-25% synchronization lifts in weak-coupling regimes (K < 1.2) relative to rational ratios. A hybrid toggle—leveraging slaving to the collective order parameter ξ = |(1/N) ∑ e^{i θ_j}|—condenses structured noise into emergent synergy, as fast subsystems align to slow global modes without rigid locking.
+
+Using non-linear k-NN MI estimation and genus-g proxies (inspired by the 2006 Katok disproof), simulations reveal +13.6% ± 24.9% filtered MI lifts (80% irrational dominance) in g=3 networks, with Lyapunov exponents tamed (0.233, 17% lower variance) and fractal dimensions ~1.35 signaling self-similar obstructions as resilience amplifiers. Falsifiability is ensured: Rational pruning >20% in orientable classes voids the conjecture.
+
+Applications span neural stall mitigation (+48% via HCP proxies), fluid flux optimization (100% in orientable baffles), and AI detuning (25% overfitting cuts). This framework extends Kuramoto mean-field theory, offering a topological toolkit for antifragile systems in biology, engineering, and computation. Open-source stubs enable forking and disproof.
+
+
+
 ## 1. Introduction (pg 1-3)
 - **Motivation** (1pg): Chaos in sync systems (brains, fluids, AI) as opportunity—irrational ratios (nature's default, e.g., golden spirals) tame without locking. Gap: Rational dominance in strong K; weak regimes underexplored (cite Strogatz 2003 sync review).
 - **Conjecture Statement** (0.5pg): Formal: In T^n networks, irrational ω yield dense orbits boosting MI ≥20% superadditively vs rational, via hybrid toggle. Falsifiable via prune threshold.
