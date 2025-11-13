@@ -44,17 +44,7 @@ This universality extends across complex systems: neural stall mitigation (+48% 
 - **Superlinear Tease** (0.5pg): Outliers scale w/ g (max +79% g=3 > g=2's 18%); fractal corr r=0.67; slaving amplifies in orientable (noise condenses to ξ for 77% edges).
 - **Table 2**: Ensemble dumps (lifts, MI, LE, dim, ξ for g=1-3).
 
-## 5. Discussion and Applications (pg 13-17)
-- **Interpretation** (1pg): Stochastic resilience—Katok blocks flip to irr edges (80% orientable wins); LE tames for bounded chaos. Vs lit: Extends Strogatz weak underexplored.
-- **Limitations & Fals** (0.5pg): Proxy couplings conservative (true hyperbolic for g=4?); high var (25%)—real data averages. Prune test: No (>20% threshold safe).
-- **Apps** (2pg): 
-  - Neural: +48% stall reduction (HCP/FlyWire ports; theta-wave proxies).
-  - Fluids: 100% flux in orientable baffles (PDE Schrödinger entropy 0.35→0.48).
-  - AI: 25% overfitting cuts via irr detuning.
-  - Broader: Physics (plasma instabilities), chemistry (reaction-diffusion waves), cosmology (galactic field sync), consciousness (qualia emergence in coherent lattices).
-  TED hook: "Flip the holes: +79% from topology's lottery."
-- **Future** (0.5pg): g=4 recursive; HCP real-freq ports; Chaos sub post-arXiv.
-- **Fig 7**: App schematics (neural toggle, fluid lamination); Table 3: Projected gains (48-100%).
+
 
 ## 6. Conclusion (pg 17-18)
 - **Synthesis** (0.5pg): Conjecture holds—irr toggles weak chaos to superadditive wins, genus amps via fractal var.
