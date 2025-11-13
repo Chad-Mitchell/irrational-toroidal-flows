@@ -8,6 +8,10 @@ def lyapunov_max(theta_traj, omega, K, N, genus=1, dt=0.01, steps=50):
     """
     Proxy max LE: Tangent vec growth over traj (Gram-Schmidt norm).
     Positive mild → bounded chaos; irr should clip vs rat.
+    NOTE: For high-genus/multi-ring (N>20), full J @ tangent blows dim (NxN matrix); 
+    scalar approx via max(eig(J)) per step for speed/stability.
+    To fix: Replace tangent growth with le_step = np.log(np.linalg.eigvals(J).max().real) if J is symm; avg over steps.
+    Current: Full ortho for low-N; comment out for ens if snag. 
     """
     T = len(theta_traj)
     le_sum = 0
