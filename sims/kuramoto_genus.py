@@ -1,6 +1,9 @@
 import numpy as np
 from scipy.integrate import odeint
 
+# Core Kuramoto Model with Genus Proxy (Base for All Sims)
+# This is the backbone—extends to coupled rings for g≥2 (e.g., g=3: 3 rings, sequential handles). Tune genus for proxies; orientable_filter=True for adj-threshold blocks.
+
 def kuramoto_genus(theta, t, omega, K, N, genus=1, irr_scale=1.0, rational_ratio=False, trans_coup=0.05, orientable_filter=True):
     """
     Genus-g proxy: g=1 (base torus), g>1 (coupled rings with handle transversals).
