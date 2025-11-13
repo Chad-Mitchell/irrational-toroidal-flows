@@ -2,6 +2,9 @@ import numpy as np
 from scipy.spatial.distance import cdist
 from scipy.special import digamma
 
+# k-NN Mutual Information Estimator (Non-Linear Core)
+# Kraskov-Stögbauer-Grassberger impl—pairwise proxy for total MI. Use total_knn_mi for ensembles.
+
 def knn_mi(X, Y, k=3, metric='euclidean'):
     """
     KSG estimator for MI between two vars (1D phases ok).
