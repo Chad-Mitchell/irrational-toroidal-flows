@@ -4,7 +4,7 @@ This outline is structured for a ~15-20 page arXiv submission (e.g., dynamical-s
 
 ## Title Page (pg 1)
 - **Title**: Irrational Toroidal Flows: Emergent Synchronization and Superadditive Information Gains in Weakly Coupled Chaotic Systems
-- **Authors**: Chad Mitchell
+- **Authors**: Chad Mitchell (Lawrence Berkeley National Lab)
 - **Abstract** (150-200 words): Summarize conjecture (irrational windings on T^n stabilize chaos for ~20% MI lifts in weak K<1.2), hybrid toggle, genus extensions (Katok disproof as resilience amp). Key results: +13.6% ±24.9% filtered lifts (80% wins), LE taming, fractal dim ~1.35. Fals: >20% rational prune. Apps: +48% neural stalls, 100% fluid flux. Keywords: Kuramoto model, ergodic theory, mutual information, topological dynamics.
 - **arXiv-style metadata**: Date: November 2025; Comments: v2 w/ genus probes.
 
@@ -23,21 +23,22 @@ This outline is structured for a ~15-20 page arXiv submission (e.g., dynamical-s
 - **Table 1**: Key refs (e.g., Strogatz, Katok, Iglesias-Zemmour)—~10 entries.
 
 ## 3. Methods (pg 5-8)
-- **Model** (1pg): Extended Kuramoto eq (snippet 1: kuramoto_genus)—genus proxy (coupled rings), orientable filter (adj π/3 thresh), diffeology irr_scale boost.
-- **MI Estimation** (1pg): k-NN pairwise proxy (snippet 2: knn_mi/total_knn_mi)—k=3, num_pairs=10; Gaussian baseline for contrast.
-- **Metrics** (0.5pg): Sync R; fractal dim (snippet 4: box_dim, 1D/2D); max LE (snippet 5: lyapunov_max, Jacobian growth).
-- **Sim Setup** (0.5pg): N=21 (g=3 proxy), T=50 dt=0.01, 10 ens (seed 42), weak K=0.5. Ensemble runner (snippet 6: run_genus_ensemble).
-- **Falsifiability** (0.1pg): Prune >20% in filtered weak? LE>0.3 flips dominance?
-- **Fig 2**: Kuramoto schema w/ genus handles; Eq 1-3 (dθ/dt, MI formula, LE proxy).
+- **Model** (1.25pg): Extended Kuramoto eq (snippet 1: kuramoto_genus)—genus proxy (coupled rings), orientable filter (adj π/3 thresh), diffeology irr_scale boost.
+  - **Slaving Principle & Mean-Field Reduction** (0.25pg sub): Fast osc slave to slow order param ξ = | (1/N) ∑ e^{i θ_j} | (v1 Eq 1 tie-in), condensing noise η via Im[ ξ e^{-i θ_i} ] approx. Synergy lift: Irr noise slaves to dense orbits for ∆I > additive (fals: Prune <20% under η amp). Eq 2: dθ_i/dt ≈ ω_i + K Im[ ξ e^{-i θ_i} ] + η_irr (structured via √2 shift).
+- **MI Estimation** (1pg): k-NN pairwise proxy (snippet 2: knn_mi/total_knn_mi)—k=3, num_pairs=10; Gaussian baseline for contrast. Cross: ∆I synergy via slaving ξ evolution.
+- **Metrics** (0.5pg): Sync ξ/R; fractal dim (snippet 4: box_dim, 1D/2D); max LE (snippet 5: lyapunov_max, Jacobian growth)—LE bounds slaving stability.
+- **Sim Setup** (0.5pg): N=21 (g=3 proxy), T=50 dt=0.01, 10 ens (seed 42), weak K=0.5 + η=0.01 noise. Ensemble runner (snippet 6: run_genus_ensemble; add ξ calc).
+- **Falsifiability** (0.1pg): Prune >20% in filtered weak/slaving? LE>0.3 flips dominance?
+- **Fig 2**: Kuramoto schema w/ genus handles/slaving ξ arrow; Eq 1-3 (dθ/dt, ξ slaving, MI formula, LE proxy).
 - **Appendix A Tease**: Full stubs in repo (link: github.com/Chad-Mitchell/irrational-toroidal-flows/sims/).
 
 ## 4. Results (pg 8-13)
-- **Base k-NN Grounding** (1pg): +18% weak lifts (80% wins); Gaussian overest 45%. Fig 3: MI vs K curves (irr > rat weak).
-- **Genus Probes** (2pg): g=2: +18.5% ±12.3% (80% wins, dim=1.42); g=3 unfiltered: +1.2% ±9.1% (60%, dim=0.965). Var as disproof signal.
-- **Filtered g=3 & LE** (2pg): +13.6% ±24.9% (80% wins, lifts up to +79%); irr LE 0.233 (17% lower var). Dim ~1.35 (2D proj, +25%>rat). Fig 4: Lift hist by g; Fig 5: LE vs MI scatter (r=-0.4 tame corr); Fig 6: Poincaré sections (laminations in irr).
-- **Regime Table** (0.5pg): Updated from log (weak +13.6%, strong rat +21%, quantum hybrid +25%).
-- **Superlinear Tease** (0.5pg): Outliers scale w/ g (max +79% g=3 > g=2's 18%); fractal corr r=0.67.
-- **Table 2**: Ensemble dumps (lifts, MI, LE, dim for g=1-3).
+- **Base k-NN Grounding** (1pg): +18% weak lifts (80% wins); Gaussian overest 45%. Fig 3: MI vs K curves (irr > rat weak); Fig 3.5 (inset): ξ evolution under noise (slaving synergy +20%).
+- **Genus Probes** (2pg): g=2: +18.5% ±12.3% (80% wins, dim=1.42); g=3 unfiltered: +1.2% ±9.1% (60%, dim=0.965). Var as disproof signal—slaving noise to blocks for emergent ∆I.
+- **Filtered g=3 & LE** (2pg): +13.6% ±24.9% (80% wins, lifts up to +79%); irr LE 0.233 (17% lower var). Dim ~1.35 (2D proj, +25%>rat). Slaving payoff: ξ peaks +48% in low-η irr (v1 probe green). Fig 4: Lift hist by g; Fig 5: LE vs MI/ξ scatter (r=-0.4 tame corr); Fig 6: Poincaré sections (laminations in irr, ξ contours).
+- **Regime Table** (0.5pg): Updated from log (weak +13.6%, strong rat +21%, quantum hybrid +25%)—add col: Slaving Synergy (∆I via ξ, e.g., +20% noise lift).
+- **Superlinear Tease** (0.5pg): Outliers scale w/ g (max +79% g=3 > g=2's 18%); fractal corr r=0.67; slaving amplifies in orientable (noise condenses to ξ for 77% edges).
+- **Table 2**: Ensemble dumps (lifts, MI, LE, dim, ξ for g=1-3).
 
 ## 5. Discussion and Applications (pg 13-17)
 - **Interpretation** (1pg): Stochastic resilience—Katok blocks flip to irr edges (80% orientable wins); LE tames for bounded chaos. Vs lit: Extends Strogatz weak underexplored.
@@ -57,11 +58,11 @@ This outline is structured for a ~15-20 page arXiv submission (e.g., dynamical-s
 - **Fig 8**: Summary lift evolution (Gaussian → filtered g=3).
 
 ## References (pg 18-20)
-- ~30 entries: Core (Kuramoto 1975, Katok 1970s/2006 disproof), recent (Iglesias-Zemmour 2025 arXiv), tools (Kraskov 2004).
+- ~30 entries: Core (Kuramoto 1975, Katok 1970s/2006 disproof), recent (Iglesias-Zemmour 2025 arXiv), tools (Kraskov 2004), slaving (Haken 1983 Synergetics).
 - BibTeX ready.
 
 ## Appendices (if space: pg 20+)
 - **A: Code Stubs**: Paste snippets 1-6 w/ MIT note; repo link.
 - **B: Full Ens Dumps**: g=3 lifts [0.74, -5.85, ..., 79.26]; raw tables.
-- **C: Glossary**: Ergodic density, orientable transversal, etc.
+- **C: Glossary**: Ergodic density, orientable transversal, slaving principle, etc.
 ```​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
