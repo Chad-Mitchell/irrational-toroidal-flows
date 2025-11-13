@@ -4,7 +4,7 @@ This outline is structured for a ~15-20 page arXiv submission (e.g., dynamical-s
 
 ## Title Page (pg 1)
 - **Title**: Irrational Toroidal Flows: Emergent Synchronization and Superadditive Information Gains in Weakly Coupled Chaotic Systems
-- **Authors**: Chad Mitchell (Lawrence Berkeley National Lab)
+- **Authors**: Chad Mitchell
 - **Abstract** (150-200 words): Summarize conjecture (irrational windings on T^n stabilize chaos for ~20% MI lifts in weak K<1.2), hybrid toggle, genus extensions (Katok disproof as resilience amp). Key results: +13.6% ±24.9% filtered lifts (80% wins), LE taming, fractal dim ~1.35. Fals: >20% rational prune. Apps: +48% neural stalls, 100% fluid flux. Keywords: Kuramoto model, ergodic theory, mutual information, topological dynamics.
 - **arXiv-style metadata**: Date: November 2025; Comments: v2 w/ genus probes.
 
